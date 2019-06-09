@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ABOBE PHOTOZHAB</title>
+	<style type="text/css">
+		#canv {
+			width: 1000px; 
+			height: 800px; 
+			border: 1px solid blue;
+			
+		}
+		.head {
+			width: 1080px;
+			height: 1080px; 
+			margin: 0 auto;
+		}
+		.tools {
+			width: 300px;
+			height: 140px; 
+			margin: 0 auto;
+		}
+	.buttons {
+		width: 300px;
+			height: 40px; 
+			margin: 0 auto;
+	}
+	</style>
+</head>
+<body>
+<div class="head">
+
+
+	<div class="canv">
+		<canvas id="canv" width="1000" height="800"></canvas> 
+	</div>
+
+	<div class="tools">
+
+		<div class="coordinates">
+			<p id="x"><b>x: </b> <span id="xCoord"></span></p>
+			<p id="y"><b>y: </b> <span id="yCoord"></span></p>
+			<br>
+		</div>
+	<div class="buttons">
+		<button class="tool-button" id='brush'>Brush</button>
+		<button class="tool-button" id='notbrush'>NotBrush</button>
+		<button class="tool-button" id='notbrush2'>NotBrush 2</button>
+	</div>
+
+		<!--<select id='size-select'>
+			<option>5</option>
+			<option>10</option>
+			<option>15</option>
+			<option>20</option>
+		</select>-->
+		<input type="range" min="1" max="50" id="size-select" 
+	  value="1" class = "slider"> 
+	  <p>Кисть: <span id="bsize">1</span></p>
+
+		<input type="color" id="color">
+	</div>
+</div>
+
+	<script src="script.js">
+		
+
+	</script>
+</body>
+</html>
