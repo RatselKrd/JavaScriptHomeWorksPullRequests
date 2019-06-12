@@ -1,0 +1,28 @@
+<script>
+//    if (!("a" in window)) {
+//    var a = 1;
+//}
+//alert(a); // выведено будет undefined
+
+//var b = function a(x) {
+//   x && a(--x);
+//};
+//alert(a); // будет ошибка ничего не выведет, т.к. а не определено
+
+//function a(x) {
+//  return x * 2;
+//}
+//var a;
+//alert(a); // браузер запросит подтверждение действия на строчку 12 и 13
+
+//function b(x, y, a) {
+//   arguments[2] = 10;
+//    alert(a);
+//}
+//b(1, 2, 3); // выведет 10
+
+function a() {
+    alert(this);
+}
+a.call(null); // браузер запросит подтверждение действия [object Window]
+</script>
